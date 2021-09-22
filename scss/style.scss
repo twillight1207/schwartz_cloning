@@ -1,6 +1,8 @@
 body {
   width: 100%;
   height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -15,9 +17,18 @@ h3 {
   font-weight: 500;
 }
 
+h4 {
+  margin: 0;
+  font-weight: 400;
+}
+
 p {
   font-size: 35px;
   line-height: 1.3;
+}
+
+.small-p {
+  font-size: 27px;
 }
 
 button {
@@ -123,10 +134,72 @@ nav {
       order: 2;
     }
   }
+  .megazine-list__more img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+  }
 }
 
 .megazine-list__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.ad {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  p {
+    width: 50%;
+  }
+}
+
+.buying {
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-column-gap: 20px;
+  .buying__shop img,
+  .buying__gift img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+  }
+}
+
+.others {
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-column-gap: 20px;
+}
+
+footer {
+  height: 30vh;
+  padding: 20px 10%;
+  background-color: #464646;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    font-size: 25px;
+    margin-bottom: 5vh;
+  }
+}
+
+.footer-box:last-child {
+  margin-top: 1vh;
+}
+
+.footer-box span {
+  display: block;
 }
